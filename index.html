@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#section-about" class="main-nav-link">About</a></li>
+          <li><a href="#section-about" class="main-nav-link">Project</a></li>
+          <li><a href="#section-contact" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero" id="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Hi, I'm Yulianto Alexander</h1>
+            <p class="hero-text">A Fullstack Developer</p>
+            <a href="#section-about" class="btn btn-project">Projects</a>
+          </div>
+          <div class="hero-img-box"></div>
+        </div>
+      </section>
+      <section class="section-about" id="section-about">
+        <div class="container center-text">
+          <h2 class="heading-secondary">About me</h2>
+          <p class="subheading margin-bottom-xl">
+            I'm a Fullstack Web Developer building the Front-end and Back-end of
+            Websites.
+          </p>
+        </div>
+        <div class="container grid grid--2-cols">
+          <div class="skill-box">
+            <p class="about-description">My Skill</p>
+            <div class="skill">
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/html.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/css.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/js.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/jquery.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/react.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/nodejs.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/express.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/mongodb.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/github.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/git.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/responsive.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+              <div class="skill-icon-box">
+                <img
+                  src="./public/icon/terminal.svg"
+                  alt="svg-html"
+                  class="skill-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
+            <p class="btn-slide btn-slide-left"><</p>
+            <p class="btn-slide btn-slide-right">></p>
+            <p class="about-description">Project</p>
+            <div class="slider">
+              <div class="slide">
+                <a href="https://bankist-dom.netlify.app/" class="project-link"
+                  ><img
+                    class="project-img"
+                    src="./public/image/project-bankist.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="slide">
+                <a
+                  href="https://limsunmen.github.io/omnifood/"
+                  class="project-link"
+                  ><img
+                    class="project-img"
+                    src="./public/image/project-omnifood.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contact" id="section-contact">
+        <div class="container center-text">
+          <h2 class="heading-secondary">Contact Me</h2>
+          <p class="subheading margin-bottom-xl">
+            Feel free to contact me using the form below. I'll respond as soon
+            as possible
+          </p>
+        </div>
+        <div class="form container">
+          <form class="form-input" action="">
+            <div>
+              <label for="name">Name</label>
+              <input id="text" type="text" placeholder="Name" required />
+            </div>
+            <div>
+              <label for="name">Email</label>
+              <input id="email" type="email" placeholder="Email" required />
+            </div>
+            <div>
+              <label for="name">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="btn-border">
+              <button class="btn">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
